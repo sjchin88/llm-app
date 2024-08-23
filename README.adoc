@@ -1,0 +1,38 @@
+= Installation Instruction
+
+== Steps
+
+1. Download code or clone the repo.
+
+2. Activate your virtual environment
+
+3. Install dependencies with poetry
+   [source, console]
+
+---
+
+# if required
+
+pip install poetry
+
+# if changed python version, update the poetry.lock
+
+poetry lock -no-update
+
+# Install
+
+## poetry install
+
+4. Activate the poetry shell
+   [source, console]
+
+---
+
+## poetry shell
+
+5. Open Jupyter Lab
+   [source, console]
+
+---
+
+## jupyter lab
