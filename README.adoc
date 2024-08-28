@@ -14,12 +14,22 @@
 
 [source, console]
 ----
+# Step 2 Activate virtual Environment
+python -m venv <directory>
+# Example
+python -m venv myenv
 
+# Source the activate file , in bash
+source <directory>/Scripts/activate
+# Example
+source myenv/Scripts/activate
+
+# Step 3 Install Dependencies with poetry
 # if required
 pip install poetry
 
 # if changed python version, update the poetry.lock
-poetry lock -no-update
+poetry lock --no-update
 
 # Install
 poetry install
